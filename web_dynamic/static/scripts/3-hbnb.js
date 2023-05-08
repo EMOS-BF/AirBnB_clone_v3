@@ -10,7 +10,7 @@ $(document).ready(function () {
         $('.amenities h4').text(names.sort().join(', '));
     });
     $.get("http://0.0.0.0:5001/api/v1/status/", (response, data)=>{
-        if(response === "sucess", data.status === "ok"){
+        if(response === "success", data.status === "ok"){
            $("div#api_status").addClass("available");
         }
         else{
