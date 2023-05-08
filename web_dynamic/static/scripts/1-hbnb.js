@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    const amenity_obj = {}
+    const amenity_obj = {};
     $('.amenity .popover input').change(function () {
         if ($(this).is(':checked')) {
             amenity_obj[$(this).attr('data-name')] = $(this).attr('data-id');
